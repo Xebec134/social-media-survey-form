@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking your time to complete this survey</p>
+    </header>
+    
+    <form method="post" action="#" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">
+                Name 
+                <input type="text" name="name" id="name" required placeholder="Jane Doe"> 
+            </label>
+            <label for="email" id="email-label">
+                Email 
+                <input type="email" name="email" id="email" required placeholder="JaneDoe@example.com">
+            </label>
+            <label for="age" id="number-label">
+                Age 
+                <input type="number" name="age" id="number" min="0" max="120" placeholder="12" required>
+            </label>
+
+            <p>What is your gender?</p>
+            <label for="male">
+                <input type="radio" name="gender" value="male" id="male"> Male
+            </label>
+            <label for="female">
+                <input type="radio" name="gender" value="female" id="female"> Female
+            </label>
+            <label for="other">
+                <input type="radio" name="gender" value="other" id="other"> Other
+            </label>
+        </fieldset>
+    
+        <fieldset>
+            <label for="dropdown">Which social media platform do you use the most? 
+                <select name="" id="dropdown">
+                    <option value="0" disabled selected>(select one)</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Twitter/X">Twitter/X</option>
+                    <option value="TikTok">TikTok</option>
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="Snapchat">Snapchat</option>
+                    <option value="Reddit">Reddit</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+
+            <p>What are your primary reasons for using social media? <span class="small">(Select all that apply)</span></p>
+            <label for="entertainment">
+                <input type="checkbox" name="reason" value="Entertainment" id="entertainment"> Entertainment
+            </label>
+            <label for="networking-career growth">
+                <input type="checkbox" name="reason" value="networking-career growth" id="networking-career growth"> Networking and career growth
+            </label>
+            <label for="influencers-celebrites">
+                <input type="checkbox" name="reason" value="influencers-celebrites" id="influencers-celebrites"> Following influencers or celebrites
+            </label>
+            <label for="friends-family">
+                <input type="checkbox" name="reason" value="friends-family" id="friends-family"> Staying connected with friends and family
+            </label>
+            <label for="shopping">
+                <input type="checkbox" name="reason" value="shopping" id="shopping"> Shopping or discovering products
+            </label>
+            <label for="news">
+                <input type="checkbox" name="reason" value="news" id="news"> Keeping up with news or current events
+            </label>
+            <label for="personal-content">
+                <input type="checkbox" name="reason" value="personal-content" id="personal-content"> Sharing personal content
+            </label>
+
+            <p>Do you belive social media impacts your self-esteem or mental health?</p>
+            <label for="men-yes-pos">
+                <input type="radio" name="mental-impact" value="men-yes-pos" id="men-yes-pos"> Yes, positively
+            </label>
+            <label for="men-yes-neg">
+                <input type="radio" name="mental-impact" value="men-yes-neg" id="men-yes-neg"> Yes, negatively
+            </label>
+            <label for="men-no">
+                <input type="radio" name="mental-impact" value="men-no" id="men-no"> No effect
+            </label>
+
+            <p>Do you feel that social media impacts your productivity?</p>
+            <label for="prod-yes-pos">
+                <input type="radio" name="prod-impact" value="prod-yes-pos" id="prod-yes-pos"> Yes, positively
+            </label>
+            <label for="prod-yes-neg">
+                <input type="radio" name="prod-impact" value="prod-yes-neg" id="prod-yes-neg"> Yes, negatively
+            </label>
+            <label for="prod-no">
+                <input type="radio" name="prod-impact" value="prod-no" id="prod-no"> No effect
+            </label>
+    
+            <label for="comments">
+                Any other comments about social media?
+                <textarea name="comments" id="comments" placeholder="Enter your comment here..."></textarea>
+            </label>
+        </fieldset>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
