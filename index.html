@@ -12,7 +12,7 @@
         <p id="description">Thank you for taking your time to complete this survey</p>
     </header>
     
-    <form method="post" action="#" id="survey-form">
+    <form method="post" action="#" id="survey-form" class="margin-bottom">
         <fieldset>
             <label for="name" id="name-label">
                 Name 
@@ -31,17 +31,14 @@
             <label for="male">
                 <input type="radio" name="gender" value="male" id="male"> Male
             </label>
-            <label for="female">
+            <label for="female" class="margin-bottom">
                 <input type="radio" name="gender" value="female" id="female"> Female
-            </label>
-            <label for="other">
-                <input type="radio" name="gender" value="other" id="other"> Other
             </label>
         </fieldset>
     
         <fieldset>
             <label for="dropdown">Which social media platform do you use the most? 
-                <select name="" id="dropdown">
+                <select name="social-media-platform" id="dropdown">
                     <option value="0" disabled selected>(select one)</option>
                     <option value="Facebook">Facebook</option>
                     <option value="Instagram">Instagram</option>
@@ -73,7 +70,7 @@
             <label for="news">
                 <input type="checkbox" name="reason" value="news" id="news"> Keeping up with news or current events
             </label>
-            <label for="personal-content">
+            <label for="personal-content" class="margin-bottom">
                 <input type="checkbox" name="reason" value="personal-content" id="personal-content"> Sharing personal content
             </label>
 
@@ -84,7 +81,7 @@
             <label for="men-yes-neg">
                 <input type="radio" name="mental-impact" value="men-yes-neg" id="men-yes-neg"> Yes, negatively
             </label>
-            <label for="men-no">
+            <label for="men-no" class="margin-bottom">
                 <input type="radio" name="mental-impact" value="men-no" id="men-no"> No effect
             </label>
 
@@ -95,7 +92,7 @@
             <label for="prod-yes-neg">
                 <input type="radio" name="prod-impact" value="prod-yes-neg" id="prod-yes-neg"> Yes, negatively
             </label>
-            <label for="prod-no">
+            <label for="prod-no" class="margin-bottom">
                 <input type="radio" name="prod-impact" value="prod-no" id="prod-no"> No effect
             </label>
     

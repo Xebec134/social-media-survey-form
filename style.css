@@ -1,80 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'); 
 
+:root {
+    --body-background-color: #F0F4F8;
+    --form-background-color: white;
+    --text-color: #333333;
+    --input-background-color: #E0E7EF;
+    --button-color: #007BFF;
+    --button-hover-color: #FF6F61;
+    --smaller-font-size: 1.2rem;
+    --small-font-size: 1.5rem;
+    --regular-font-size: 1.7rem;
+    --medium-font-size: 2.3rem;
+    --large-font-size: 3.8rem;
+}
+
+html {
+    font-size: 10px;
+}
+
 * {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", serif;   
+    color: var(--text-color);
+    font-size: var(--regular-font-size);
 }
 
 body {
-    background-color: #67676795;
+    background-color: var(--body-background-color);
 }
 
 header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 3%;
 }
 
 h1 {
+    font-size: var(--large-font-size);
     margin: 0;
 }
 
 header p {
-    margin-top: 5px;
+    margin-top: 0.5%;
+    font-size: var(--small-font-size);
     font-style: italic;
 }
 
 form {
-    width: 700px;
+    max-width: 55%;
     margin: 0 auto;
-    background-color: #808080;
-    border-radius: 3px;
-    padding: 30px;
+    background-color: var(--form-background-color);
+    border-radius: 1%;
+    padding: 2%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 fieldset {
+    width: 100%;
     border: none;
 }
 
 label {
     display: block;
-    font-size: 18px;
+}
+
+.margin-bottom {
+    margin-bottom: 2.5%;
 }
 
 input[type="text"], input[type="number"], input[type="email"], select, textarea {
+    background-color: var(--input-background-color);
     width: 100%;
-    height: 35px;
-    padding-left: 8px;
-    font-size: 16px;
+    height: 3rem;
+    padding-left: 10px;
+    font-size: var(--small-font-size);
     border: none;
     border-radius: 3px;
-    margin-bottom: 15px;
+    margin-bottom: 2.5%;
 }
 
+#dropdown option {
+    font-size: var(--small-font-size);
+}
 
-button[type="submit"] {
+input[type="checkbox"] {
+    margin-bottom: 1.5%;
+}
+
+#submit {
     width: 100%;
     padding: 5px 0;
-    font-size: 20px;
-    background-color: #000000c7;
-    color: #fff;
+    font-size: var(--medium-font-size);
+    background-color: var(--button-color);
+    color: var(--form-background-color); 
     border: none;
     cursor: pointer;
+    transition: all 0.25s ease-in-out;
 }
 
-form p {
-    font-size: 18px;
-    margin-bottom: 5px;
+#submit:hover {
+    background-color: var(--button-hover-color);
 }
 
 .small {
-    font-size: 12px;
+    font-size: var(--smaller-font-size);
 }
 
 textarea {
-    height: 60px;
-}
-
-fieldset:last-of-type label:last-of-type {
-    margin-top: 30px;
+    height: 6rem;
+    padding-top: 8px;
 }
