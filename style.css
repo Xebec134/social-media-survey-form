@@ -48,7 +48,8 @@ header p {
 }
 
 form {
-    max-width: 55%;
+    width: 55%;
+    min-width: 550px;
     margin: 0 auto;
     background-color: var(--form-background-color);
     border-radius: 1%;
