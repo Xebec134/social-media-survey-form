@@ -45,13 +45,13 @@ h1 {
 }
 
 header p {
-    margin-top: 0.5%;
+    margin-top: 0.5% auto 0;
     font-size: var(--small-font-size);
     font-style: italic;
 }
 
 #survey-form {
-    width: 60vw;
+    width: 55vw;
     margin: 0 auto;
     background-color: var(--form-background-color);
     border-radius: 1%;
@@ -130,7 +130,7 @@ textarea {
     }
 
     #survey-form {
-        max-width: 30vw;
+        /* max-width: 60vw; */
     }
 
     .margin-bottom {
