@@ -51,7 +51,7 @@ header p {
 }
 
 #survey-form {
-    width: 60%;
+    width: 60vw;
     margin: 0 auto;
     background-color: var(--form-background-color);
     border-radius: 1%;
@@ -130,8 +130,7 @@ textarea {
     }
 
     #survey-form {
-        width: 70%;
-        max-width: 300px;
+    
     }
 
     .margin-bottom {
