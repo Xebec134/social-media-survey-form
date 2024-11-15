@@ -120,7 +120,7 @@ textarea {
     padding-top: 8px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     :root {
         --smaller-font-size: 0.8rem;
         --small-font-size: 1.3rem;
@@ -130,7 +130,8 @@ textarea {
     }
 
     #survey-form {
-        width: 80%;
+        width: 70%;
+        max-width: 300px;
     }
 
     .margin-bottom {
