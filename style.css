@@ -130,7 +130,8 @@ textarea {
     }
 
     #survey-form {
-        /* max-width: 60vw; */
+        width: 100%;
+        border-radius: 0;
     }
 
     .margin-bottom {
