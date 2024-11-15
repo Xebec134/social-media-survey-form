@@ -32,6 +32,9 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
     text-align: center;
     margin-bottom: 3%;
 }
@@ -47,9 +50,8 @@ header p {
     font-style: italic;
 }
 
-form {
-    width: 55%;
-    min-width: 550px;
+#survey-form {
+    width: 60%;
     margin: 0 auto;
     background-color: var(--form-background-color);
     border-radius: 1%;
@@ -64,6 +66,7 @@ fieldset {
 
 label {
     display: block;
+    font-size: var(--small-font-size);
 }
 
 .margin-bottom {
@@ -89,6 +92,10 @@ input[type="checkbox"] {
     margin-bottom: 1.5%;
 }
 
+input[type="checkbox"], input[type="radio"] {
+    height: 1.2rem;
+}
+
 #submit {
     width: 100%;
     padding: 5px 0;
@@ -111,4 +118,22 @@ input[type="checkbox"] {
 textarea {
     height: 6rem;
     padding-top: 8px;
+}
+
+@media screen and (max-width: 500px) {
+    :root {
+        --smaller-font-size: 0.8rem;
+        --small-font-size: 1.3rem;
+        --regular-font-size: 1.4rem;
+        --medium-font-size: 2rem;
+        --large-font-size: 2.5rem;
+    }
+
+    #survey-form {
+        width: 80%;
+    }
+
+    .margin-bottom {
+        margin-bottom: 4%;
+    }
 }
